@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=cyrillic,latin">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+    <header class='container'>
+        <section class='content head'>
+            <h1 class='logo'>
+                <a href="index.php">Репетитор <br> по математике</a>
+            </h1>
+
+            <nav>
+                <ul class='menu main-menu tel-hide'>
+                    <li><a href="lesson.html">Занятия</a></li>
+                    <li>
+                        <a>Материалы</a>
+                        <ul class='sub-menu'>
+                            <li><a href="razbor-zadanij.php">Разбор заданий</a></li>
+                            <li><a href="spravochnik.php">Справочник</a></li>
+                            <li><a href="demo.php">Демонстрационные варианты</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="otzyv.php">Отзывы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class='contact tel-hide'>
+                <h2>Тел.: 8-914-433-7871</h2>
+                <p>zubkova_v.v@mail.ru</p>
+            </div>
+
+            <div class='contact_abs tel-hide'>
+                <h2>Тел.: 8-914-433-7871</h2>
+            </div>
+
+            <img class='menu-tel-icon' src='img/menu.svg'/>
+            <div class='overlay hidden'>
+                <img class='close close-menu' src='img/close-button.svg'/>
+                <nav class='block'>
+                    <ul class='menu menu-tel'>
+                        <li><a href="lesson.html">О занятиях</a></li>
+                        <li><a href="razbor-zadanij.php">Разбор заданий</a></li>
+                        <li><a href="spravochnik.php">Справочник</a></li>
+                        <li><a href="demo.php">Демонстрационные варианты</a></li>
+                        <li><a href="otzyv.php">Отзывы</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+
+    <main class='container'>
+        <section class='content info'>
+            <div class="flex-item">
+                <h2 class='article-title'>Контакты</h2>
+                <article class="contact-info">
+                    <div class='table'>
+                        <div class='row'>
+                            <div class='cell left'>Район:</div>
+                            <div class='cell'>м.Профсоюзная</div>
+                        </div>
+                        <div class='row'>
+                            <div class='cell left'>Выезд к ученику:</div>
+                            <div class='cell'>радиус 3 станции метро</div>
+                        </div>
+                        <div class='row'>
+                            <div class='cell left'>Телефон:</div>
+                            <div class='cell'>8-914-433-78-71</div>
+                        </div>
+                        <div class='row'>
+                            <div class='cell left'>Email:</div>
+                            <div class='cell'>zubkova_v.v@mail.ru</div>
+                        </div>
+                    </div>
+                    <iframe class='map tel-hide' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4499.431590743429!2d37.555278253362204!3d55.67654215647134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cc2a09ef14f%3A0xce26feee75edfcfa!2z0J_RgNC-0YTRgdC-0Y7Qt9C90LDRjyDRg9C7LiwgNDTQujMsINCc0L7RgdC60LLQsCwgMTE3MzM1!5e0!3m2!1sru!2sru!4v1468136783359"></iframe>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class='container'>
+        <section class='content foot'>
+            <nav>
+                <ul class='menu footer-menu'>
+                    <li><a href='lesson.htm"'>О занятиях</a></li>
+                    <li><a href='razbor-zadanij.php'>Разбор заданий</a></li>
+                    <li class='tel-hide tablet-hide'><a href='spravochnik.php'>Справочник</a></li>
+                    <li class='tel-hide tablet-hide'><a href='demo.php'>Варианты</a></li>
+                    <li><a href='otzyv.php'>Отзывы</a></li>
+                    <li><a href='contact.html'>Контакты</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('.overlay').addClass('hidden');
+
+            $('.menu-tel-icon').on('click', function() {
+                $('.overlay').toggleClass( 'hidden' );
+            });
+
+            $('.close-menu').on('click', function() {
+                $('.overlay').toggleClass( 'hidden' );
+            });
+        });
+    </script>
+</body>
+</html>
